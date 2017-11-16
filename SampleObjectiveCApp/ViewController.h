@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+// in the .h file we put the connections - outlets and actions
+
 @property (weak, nonatomic) IBOutlet UITextField *waterTextField;
 @property (weak, nonatomic) IBOutlet UITextField *ratioTextField;
 @property (weak, nonatomic) IBOutlet UITextField *coffeTextField;

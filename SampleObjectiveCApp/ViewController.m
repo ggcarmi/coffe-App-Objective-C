@@ -25,8 +25,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+// connect the button to the .m file
 - (IBAction)calculateButton:(UIButton *)sender {
+    
     NSLog(@"calculate button was pressed");
+    
+    float water = [[self.waterTextField text] floatValue];
+    float ratio = [[self.ratioTextField text] floatValue];
+    
+    float coffe = water/ratio;
+    NSString *coffeText = [NSString stringWithFormat:@"%f",coffe];
+    self.coffeTextField.text = coffeText;
 }
 @end
